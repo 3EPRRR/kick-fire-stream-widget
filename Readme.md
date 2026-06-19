@@ -82,4 +82,4 @@ Commercial use, resale, modification for resale, or redistribution as a paid pro
 
 ## Author
 
-Designed & Developed by 3EPRRR
+Designed & Developed by 3EPRRR .
