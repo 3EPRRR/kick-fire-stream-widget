@@ -1,0 +1,68 @@
+/*
+  Fire Widget
+  Designed & Developed by 3EPRRR
+  Kick      : https://kick.com/3eprrr
+  Twitch    : https://www.twitch.tv/3eprrr
+  Instagram : https://www.instagram.com/3eprrr/
+  Discord   : https://discord.gg/PgWMMbz3Cp
+  Donate    : https://streamelements.com/3eprrr-24216/tip
+*/
+
+/* ─────────────────────────────────────────
+   Fire Widget — style.css
+   ───────────────────────────────────────── */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  width: 1920px;
+  height: 1080px;
+  background: transparent;
+  overflow: hidden;
+}
+
+/* Fire bottom — flames rise from floor upward */
+#fireBottom {
+  position: fixed;
+  bottom: 0; left: 0;
+  width: 1920px;
+  height: 360px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Fire top — flipped vertically, flames fall from ceiling */
+#fireTop {
+  position: fixed;
+  top: 0; left: 0;
+  width: 1920px;
+  height: 360px;
+  pointer-events: none;
+  z-index: 1;
+  transform: scaleY(-1);
+}
+
+/* Text fire canvas — middle zone */
+#textCanvas {
+  position: fixed;
+  top: 360px;       /* starts after top fire zone */
+  left: 0;
+  width: 1920px;
+  height: 360px;    /* middle zone height */
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* ── Cooldown Overlay ── */
+#cooldownOverlay {
+  position: fixed;
+  bottom: 380px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 30;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  text-align: center;
+}
+}
